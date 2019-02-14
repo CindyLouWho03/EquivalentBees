@@ -1,9 +1,13 @@
-# RetroBees
+# Equivalent Bees
 A Forestry Mod add-on. Adds Bee Species that were originally used in Forestry before Minecraft Version 1.7.
 With current Mod compatability for Tech Reborn & ProjectE. Adds Approximently 44 new Bee Species.
 
 ### Acknowledgements
-Forestry, Tech Reborn & ProjectE
+Forestry for their awesome bees.
+
+ProjectE for bringing back EE2
+
+and TheSledgeHammer for licensing their code under the GNU General Public Licesnse v3.0 which allows me to do this fork that i am doing.
 
 ### GNU Lesser General Public License v3.0
 
