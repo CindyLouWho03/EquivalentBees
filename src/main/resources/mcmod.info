@@ -1,11 +1,12 @@
 [{
-  "modid": "retrobees",
-  "name": "RetroBees",
-  "description": "Adds deprecated (aka retro) bees originally in Forestry from pre-1.7",
-  "version": "1.1.2",
-  "authorList": [ "TheSledgeHammer" ],
-  "credits": "Forestry, Tech Reborn and ProjectE",
-  "dependencies": [ "forestry" ],
-  "logoFile": "RetroBeesLogo.jpg"
+  "modid": "equivalentbees",
+  "name": "EquivalentBees",
+  "description": "Adds back the old FTB Retro Bees. A Fork of EquivalentBees",
+  "version": "1.0.0",
+  "mcversion": "${mcversion}",
+  "authorList": [ "TheSledgeHammer", "CindyLouWho03" ],
+  "credits": "TheSledgeHammer for EquivalentBees which this was a fork of, and I changed a lot of stuff",
+  "dependencies": [ "forestry,projecte" ]
+  "logoFile": "logo.jpg"
   }
 ]

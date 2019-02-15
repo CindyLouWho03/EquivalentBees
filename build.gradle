@@ -15,7 +15,11 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'maven'
-apply from: rootProject.file('git-maven.gradle')
+//apply from: rootProject.file('git-maven.gradle')
+
+version = "${mod_version}"
+group = "com.crankysupertoon.equivalentbees"
+archivesBaseName = "equivalentbees"
 
 sourceCompatibility = 1.8
 targetCompatibility= 1.8
@@ -25,25 +29,19 @@ repositories {
 		name = "Forestry"
 		url = "http://maven.ic2.player.to/"
 	}
-	maven {
-		name = "Modmuss50"
-		url = "http://maven.modmuss50.me/"
-	}
 }
 
 minecraft {
 	version = mcversion + "-" + forgeversion
 	runDir = "run"
-	mappings = mcp_mappings
+	mappings = "snapshot_20171003"
 }
 
-group= "com.thesledgehammer.retrobees"
-archivesBaseName = "RetroBees_" + mcversion
+group= "com.crankysupertoon.equivalentbees"
+archivesBaseName = "EquivalentBees_" + mcversion
 
 dependencies {
 	compile "net.sengir.forestry:forestry_1.12.2:+"
-	compile "TechReborn:TechReborn-1.12.2:+:universal"
-	compile "RebornCore:RebornCore-1.12.2:+:universal"
 	compile files("/lib/ProjectE-1.12-PE1.3.2h.jar")
 }
 

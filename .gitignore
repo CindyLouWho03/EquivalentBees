@@ -23,8 +23,8 @@
 /run
 /saves
 .classpath
-RetroBees_Client.launch
-RetroBees_Server.launch
+EquivalentBees_Client.launch
+EquivalentBees_Server.launch
 usernamecache.json
 usercache.json
 options.txt
@@ -33,4 +33,4 @@ options.txt
 .idea/workspace.xml
 .idea/gradle.xml
 sh.exe.stackdump
-src/main/java/com/thesledgehammer/retrobees/flowers/FlowerManagement.java
+src/main/java/com/thesledgehammer/EquivalentBees/flowers/FlowerManagement.java

@@ -54,7 +54,8 @@ for.bees.species.ender_pearl=Ender Pearl
 for.bees.species.alchemical_coal=Alchemical Coal
 for.bees.species.mobius=Mobius
 for.bees.species.aeternalis=Aeternalis
-for.bees.species.philosophers_stone=Philosopher's
+for.bees.species.darkmatter=Dark Matter
+for.bees.species.redmatter=Red Matter
 
 //Items 
 //HoneyCombs
@@ -157,6 +158,3 @@ for.flowers.coal=Coal Ore
 for.flowers.diamond=Diamond Ore
 for.flowers.redstone=Redstone Ore
 for.flowers.nether_quartz=Nether Quartz Ore
-
-//AlleleEffects
-forestry.allele.effect.philosopher_stone=Transmutation
