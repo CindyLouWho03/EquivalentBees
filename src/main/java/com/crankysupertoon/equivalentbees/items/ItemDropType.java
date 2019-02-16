@@ -12,7 +12,6 @@ import com.crankysupertoon.equivalentbees.init.ModItems;
 import com.crankysupertoon.equivalentbees.misc.IInitModel;
 import forestry.api.core.Tabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.client.renderer.color.IItemColor;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -22,25 +21,24 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 
-public class ItemDropType extends Item implements IItemColor, IInitModel {
+public class ItemDropType extends Item {
 
 	public ItemDropType() {
 		this.setMaxDamage(0);
 		this.setHasSubtypes(true);
 		this.setCreativeTab(Tabs.tabApiculture);
 	}
-	
+
 	@Override
 	public boolean isDamageable() {
 		return false;
 	}
-	
+
 	@Override
 	public boolean isRepairable() {
 		return false;
 	}
 
-	@Override
 	@SideOnly(Side.CLIENT)
 	public void initModel() {
 		for(int i = 0; i < EnumDropType.VALUES.length; i++) {
@@ -63,13 +61,12 @@ public class ItemDropType extends Item implements IItemColor, IInitModel {
 			}
 		}
 	}
-	
+
 	public ItemStack getDrop(EnumDropType honeyDrop, int amount) {
 		return new ItemStack(this, amount, honeyDrop.ordinal());
 	}
-	
+
 	@SideOnly(Side.CLIENT)
-	@Override
 	public int colorMultiplier(ItemStack stack, int tintIndex) {
 		EnumDropType drop = EnumDropType.VALUES[stack.getItemDamage()];
 		return drop != null ? tintIndex == 0 ? drop.getPrimaryColor() : drop.getSecondaryColor() : 16777215;

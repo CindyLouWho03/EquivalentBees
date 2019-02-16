@@ -19,8 +19,7 @@ public enum EnumDropType implements IStringSerializable {
 	 */
 	//EMC Combs
 	CHARGED(new Color(0x800505), new Color(0x9C0707)),
-	OMEGA(new Color(0x191919), new Color(0x4A8CA7)),
-	UUMATTER(new Color(0xFF1493), new Color(0xFF69B4),true);
+	OMEGA(new Color(0x191919), new Color(0x4A8CA7));
 
 	public static final EnumDropType[] VALUES = values();
 
